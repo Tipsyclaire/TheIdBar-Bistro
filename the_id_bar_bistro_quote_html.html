@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>THE Id Bar & Bistro｜一季行銷測試與優化報價單</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 16px;
+      background: #f4f1ec;
+      color: #222;
+      font-family: -apple-system, BlinkMacSystemFont, "Noto Sans TC", "Microsoft JhengHei", Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .quote-wrap {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+    }
+
+    .header {
+      padding: 42px 48px;
+      background: #171717;
+      color: #fff;
+    }
+
+    .eyebrow {
+      margin: 0 0 12px;
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #c9a46a;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 30px;
+      line-height: 1.3;
+      font-weight: 700;
+    }
+
+    .subtitle {
+      margin: 14px 0 0;
+      color: #ddd;
+      font-size: 16px;
+    }
+
+    .section {
+      padding: 36px 48px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .section h2 {
+      margin: 0 0 18px;
+      font-size: 22px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+
+    .info-card {
+      padding: 18px 20px;
+      border: 1px solid #eee;
+      border-radius: 14px;
+      background: #fafafa;
+    }
+
+    .label {
+      margin: 0 0 4px;
+      font-size: 13px;
+      color: #777;
+    }
+
+    .value {
+      margin: 0;
+      font-weight: 600;
+      color: #222;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 14px;
+    }
+
+    th, td {
+      padding: 16px 14px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f7f4ef;
+      font-size: 14px;
+      color: #555;
+      font-weight: 700;
+    }
+
+    td {
+      font-size: 15px;
+    }
+
+    .right {
+      text-align: right;
+      white-space: nowrap;
+    }
+
+    .item-title {
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .item-desc {
+      color: #666;
+      font-size: 14px;
+    }
+
+    .total-box {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 24px;
+    }
+
+    .total-inner {
+      min-width: 280px;
+      padding: 16px 18px;
+      border-radius: 12px;
+      background: #fcfbf8;
+      color: #5c5c5c;
+      border: 1px solid #f1ece3;
+      box-shadow: none;
+    }
+
+    .total-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .total-label {
+      font-size: 14px;
+      color: #9a948b;
+    }
+
+    .total-amount {
+      font-size: 18px;
+      font-weight: 700;
+      color: #7d7468;
+    }
+
+    .note-list {
+      margin: 0;
+      padding-left: 20px;
+      color: #555;
+    }
+
+    .note-list li {
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      padding: 28px 48px 40px;
+      color: #666;
+      font-size: 14px;
+    }
+
+    .signature {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .signature div {
+      min-width: 220px;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+
+      .quote-wrap {
+        box-shadow: none;
+        border-radius: 0;
+      }
+    }
+
+    @media (max-width: 720px) {
+      .header, .section, .footer {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+
+      th, td {
+        padding: 12px 10px;
+      }
+
+      .right {
+        white-space: normal;
+      }
+
+      .total-box {
+        justify-content: stretch;
+      }
+
+      .total-inner {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="quote-wrap">
+    <header class="header">
+      <p class="eyebrow">Quotation</p>
+      <h1>THE Id Bar & Bistro｜一季行銷測試與優化報價單</h1>
+      <p class="subtitle">以「Google 搜尋承接需求 × Meta 品牌擴散 × 短影音素材 × KOL 體驗」進行三個月測試與優化。</p>
+    </header>
+
+    <section class="section">
+      <h2>報價資訊</h2>
+      <div class="info-grid">
+        <div class="info-card">
+          <p class="label">合作對象</p>
+          <p class="value">THE Id Bar & Bistro</p>
+        </div>
+        <div class="info-card">
+          <p class="label">專案期間</p>
+          <p class="value">2026/05/18 – 2026/08/18（共三個月）</p>
+        </div>
+        <div class="info-card">
+          <p class="label">專案形式</p>
+          <p class="value">測試＋優化型行銷規劃</p>
+        </div>
+        <div class="info-card">
+          <p class="label">未稅金額</p>
+          <p class="value">NT$168,000</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>費用明細</h2>
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 38%;">項目名稱</th>
+            <th>內容說明</th>
+            <th class="right" style="width: 18%;">金額</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="item-title">Google Ads（三個月）</div>
+              <div class="item-desc">10,000 × 3 個月</div>
+            </td>
+            <td>承接正在搜尋酒吧、餐酒館、夜生活與聚會場景的潛在消費者。</td>
+            <td class="right">NT$30,000</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item-title">Meta Ads（三個月）</div>
+              <div class="item-desc">8,000 × 3 個月</div>
+            </td>
+            <td>透過 Facebook／Instagram 曝光，讓尚未認識品牌的人先看見氛圍、產生興趣。</td>
+            <td class="right">NT$24,000</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item-title">廣告操作服務費（三個月）</div>
+              <div class="item-desc">策略設定、投放管理、受眾測試與成效優化</div>
+            </td>
+            <td>包含前期帳戶設定、廣告素材測試、受眾調整、成效追蹤與每月優化建議。</td>
+            <td class="right">NT$30,000</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item-title">短影音素材製作</div>
+              <div class="item-desc">約 4–6 支短影片</div>
+            </td>
+            <td>建立酒吧氛圍感與社群內容基礎，素材可延伸用於廣告、Reels、Google 商家與後續社群經營。</td>
+            <td class="right">NT$60,000</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="item-title">KOL 體驗合作</div>
+              <div class="item-desc">3 位 × 8,000</div>
+            </td>
+            <td>邀請具生活感、適合酒吧／餐飲場景的 KOL 進行體驗分享，增加品牌口碑與社群擴散。</td>
+            <td class="right">NT$24,000</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="total-box">
+        <div class="total-inner">
+          <div class="total-row" style="margin-bottom: 10px;">
+            <span class="total-label">未稅金額</span>
+            <span style="font-size: 16px; font-weight: 600; color: #6f6a62;">NT$168,000</span>
+          </div>
+          <div class="total-row" style="margin-bottom: 14px;">
+            <span class="total-label">營業稅（5%）</span>
+            <span style="font-size: 16px; font-weight: 600; color: #6f6a62;">NT$8,400</span>
+          </div>
+          <div class="total-row" style="padding-top: 10px; border-top: 1px solid #f0ebe3;">
+            <span class="total-label">含稅總計</span>
+            <span class="total-amount" style="font-weight: 700;">NT$176,400</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>專案方向</h2>
+      <ul class="note-list">
+        <li>Google Ads 主要承接主動搜尋需求，讓已經在找酒吧與聚會地點的人更容易找到 THE Id Bar & Bistro。</li>
+        <li>Meta Ads 主要負責品牌曝光與氛圍擴散，先建立消費者對店內風格與體驗的印象。</li>
+        <li>短影音素材為本次專案關鍵，酒吧類型品牌高度仰賴視覺氛圍，素材品質會直接影響廣告成效。</li>
+        <li>KOL 合作以真實體驗與生活感分享為主，協助累積口碑與社群內容。</li>
+      </ul>
+    </section>
+
+    <section class="footer">
+      <p>備註：以上報價為一季測試與優化規劃，實際執行內容可依拍攝安排、KOL 名單與廣告投放狀況微調。</p>
+
+      <div class="signature">
+        <div>
+          <strong>報價單位</strong><br />
+          醉有趣有限公司
+        </div>
+        <div>
+          <strong>報價日期</strong><br />
+          2026 年 5 月 12 日
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
